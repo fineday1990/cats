@@ -1,0 +1,129 @@
+body {
+	margin: 0;
+	font-family: "Comic Sans MS", sans-serif;;
+}
+
+header {
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 0 5px 0 #0006;
+	margin-bottom: 20px;
+}
+
+footer{
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 0 5px 0 #0006;
+	margin: 20px 0px 0px 0px;
+}
+
+.container {
+	display: flex;
+	padding: 30px calc(50% - 500px);
+}
+.logo-img {
+	height: 50px;
+}
+.logo-text {
+	font-family: "Comic Sans MS", sans-serif;
+	font-size: 20px;
+}
+
+.box{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.cats-list{
+	display: grid;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.cat{
+	box-shadow:5px 6px 6px 2px #908484a3;
+}
+
+.cat__image{
+	max-width: 100%;
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+.cat__title{
+	margin-top: 10px;
+	margin-bottom: 0;
+	font-size: 24px;
+	text-align: center;
+}
+
+.popup {
+	background-color: rgba(0, 0, 0, .7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.popup__opened {
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup__box {
+	background-color: aliceblue;
+	padding: 20px;
+	border-radius: 10px;
+	width: 400px;
+	height: 420px;
+	position: relative;
+}
+
+.popup__close {
+	padding: 0;
+	border-radius: 50%;
+	background-color: transparent;
+	width: 30px;
+	height: 30px;
+	font-size: 18px;
+	border-color: black;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	cursor: pointer;
+}
+
+.popup__image{
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.popup__name{
+	font-size: 24px;
+}
+
+.popup__age{
+	font-size: 18px;
+}
+
+.icon-close {
+	position: absolute;
+	background-image: url("img/close.png");
+	padding-left : 32px;
+	padding-top : 10px;
+	padding-bottom : 10px;
+	background-repeat : no-repeat;
+	z-index: 1000000;
+}
