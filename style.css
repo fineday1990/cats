@@ -17,7 +17,7 @@ footer{
 	margin: 20px 0px 0px 0px;
 }
 
-.container {
+.box {
 	display: flex;
 	padding: 30px calc(50% - 500px);
 }
@@ -29,7 +29,7 @@ footer{
 	font-size: 20px;
 }
 
-.box{
+.container{
 	max-width: 1024px;
 	margin: 0 auto;
 }
@@ -81,7 +81,7 @@ footer{
 	opacity: 1;
 }
 
-.popup__box {
+.popup__container {
 	background-color: aliceblue;
 	padding: 20px;
 	border-radius: 10px;
